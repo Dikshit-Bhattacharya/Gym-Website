@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <header class="bg-dark text-white text-center py-5">
+        <h1>Welcome to DB Fitness</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- <a class="navbar-brand" href="#">Gym</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#registration">Registration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#timings">Timings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gears">Gym Gears</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nutrition">Nutrition & Supplements</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="home" class="text-center mb-5">
+            <div class="jumbotron bg-primary text-white">
+                <h2 class="display-4">Welcome to the Best Gym in Town!</h2>
+                <p class="lead">We offer state-of-the-art equipment, professional trainers, and a variety of fitness programs to suit all levels.</p>
+                <img src="Images/_c52da322-2f3f-4ce6-8af5-f7d7d5b41b33.jpeg" alt="Gym Image" class="img-fluid rounded shadow-lg">
+            </div>
+        </section>
+
+        <section id="registration" class="mb-5">
+            <h2 class="text-center mb-4">Register Today</h2>
+            <form id="registration-form" class="border p-4 bg-light rounded shadow">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="package">Select Package:</label>
+                    <select id="package" name="package" class="form-control">
+                        <option value="basic">Basic</option>
+                        <option value="standard">Standard</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+            </form>
+        </section>
+        <section id="packages" class="mb-5">
+            <h2 class="text-center mb-4">Our Packages</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Basic</h3>
+                            <p class="card-text">Access to gym equipment during off-peak hours.</p>
+                            <p class="card-text"><strong>Price: ₹2000/month</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Standard</h3>
+                            <p class="card-text">Access to gym equipment and group classes.</p>
+                            <p class="card-text"><strong>Price: ₹4000/month</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Premium</h3>
+                            <p class="card-text">All-inclusive access and personal training sessions.</p>
+                            <p class="card-text"><strong>Price: ₹6000/month</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timings" class="text-center mb-5">
+            <h2 class="mb-4">Gym Timings</h2>
+            <div class="bg-warning p-4 rounded shadow">
+                <p>Monday - Friday: 6 AM - 10 PM</p>
+                <p>Saturday: 8 AM - 8 PM</p>
+                <p>Sunday: 10 AM - 6 PM</p>
+            </div>
+        </section>
+
+        <section id="offers" class="mb-5">
+            <h2 class="text-center mb-4">Special Offers</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-danger text-white h-100 shadow">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Summer Special</h3>
+                            <p class="card-text">Get 20% off on our Standard and Premium packages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-success text-white h-100 shadow">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Refer a Friend</h3>
+                            <p class="card-text">Refer a friend and get a free month of membership!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="gears" class="text-center mb-5">
+            <h2 class="mb-4">Gym Gears</h2>
+            <p class="lead">We provide top-quality equipment to help you achieve your fitness goals.</p>
+            <img src="Images/GG.jpeg" alt="Gym Equipment" class="img-fluid rounded shadow-lg">
+        </section>
+
+
+        <section id="nutrition" class="text-center mb-5">
+            <h2 class="mb-4">Nutrition & Supplements</h2>
+            <p class="lead">Explore our range of nutritional products and supplements to support your fitness journey.</p>
+            <img src="Images/images 1.jpeg" alt="Nutrition and Supplements" class="img-fluid rounded shadow-lg">
+        </section>
+    </main>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2024 DB Fitness. All rights reserved.</p>
+    </footer>
+</body>
+</html>
